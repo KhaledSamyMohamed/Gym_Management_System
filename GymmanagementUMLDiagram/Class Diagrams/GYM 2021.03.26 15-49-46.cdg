@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="GYM">
+  <ClassDiagramComponents>
+    <Class name="AllmembersDesign" package="GYM" visibility="public" xPosition="3822.0" yPosition="1183.0">
+      <Fields>
+        <Field name="SelectedValue" type="String" visibility="package"/>
+        <Field name="Allmembers" type="String" visibility="package"/>
+        <Field name="Choosebox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ClassesHeader" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="CloseBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="DisplayList" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="UpdateDeletePanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Viewbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="chooselabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="ChooseboxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ViewbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="CloseBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AssginMembertoTrainer" package="GYM" visibility="public" xPosition="740.0" yPosition="1339.0">
+      <Fields>
+        <Field name="IDOfMember" type="int" visibility="package"/>
+        <Field name="IDOfTrainer" type="int" visibility="package"/>
+        <Field name="SelectedValue" type="String" visibility="package"/>
+        <Field name="Allmembers" type="String" visibility="package"/>
+        <Field name="CodeMember" type="String" visibility="package"/>
+        <Field name="CodeTrainer" type="String" visibility="package"/>
+        <Field name="AssginBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Choosebox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ClassesHeader" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="CloseBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="DisplayList" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="MemberID" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="TrainerID" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="UpdateDeletePanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Viewbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="chooselabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Availability" returnType="boolean" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="ChooseboxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ViewbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="AssginBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="CloseBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Class" package="GYM" visibility="public" xPosition="2238.0" yPosition="853.0">
+      <Fields>
+        <Field name="t1" type="Trainer" visibility="package"/>
+        <Field name="description" type="String" visibility="package"/>
+        <Field name="limitedNumber" type="int" visibility="package" isFinal="true"/>
+        <Field name="Classname" type="String" visibility="package"/>
+        <Field name="Daytime" type="String" visibility="package"/>
+        <Field name="avaiability" type="String" visibility="package"/>
+        <Field name="TrainerName" type="String" visibility="package"/>
+        <Field name="trainerID" type="int" visibility="package"/>
+        <Field name="totalnumberofclasses" type="int" visibility="package" isStatic="true"/>
+        <Field name="Classmembers" type="ArrayList&lt;Member&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="NameClass"/>
+          <Argument type="String" name="description"/>
+          <Argument type="String" name="Daytime"/>
+          <Argument type="String" name="avaiable"/>
+          <Argument type="String" name="TrainerName"/>
+          <Argument type="int" name="trainerID"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="NameClass"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="ClassFrame" package="GYM" visibility="public" xPosition="4535.0" yPosition="441.0">
+      <Fields>
+        <Field name="Classselectedvalue" type="String" visibility="package"/>
+        <Field name="IDSearch" type="String" visibility="package"/>
+        <Field name="Allmembers" type="String" visibility="package"/>
+        <Field name="removedMember" type="Member" visibility="package"/>
+        <Field name="data" type="String[]" visibility="package"/>
+        <Field name="AddButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="AddingMembers" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="ClassDescription" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="ClassesBox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ClassesHeader" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Close_Button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="MembersList" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="RemoveButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="RemovingMembers" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="UpdateDeletePanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Viewbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane3" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_ClassDescribe" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="Close_ButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ClassesBoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ViewbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="AddButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="RemoveButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="Viewmembers" returnType="void" visibility="private"/>
+        <Method name="Availability" returnType="boolean" visibility="private">
+          <Argument type="Class" name="cl"/>
+          <Argument type="Member" name="mem1"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ClassOperaions" package="GYM" visibility="public" xPosition="2219.0" yPosition="1301.0">
+      <Fields>
+        <Field name="removedclass" type="Class" visibility="package"/>
+        <Field name="removedclassname" type="String" visibility="package"/>
+        <Field name="SelectAvailability" type="String" visibility="package"/>
+        <Field name="Classselectedvalue" type="String" visibility="package"/>
+        <Field name="data" type="String[]" visibility="package"/>
+        <Field name="AvailabilityBox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ClassDescription" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="ClassesBox1" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ClassesHeader1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Classeslabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Close_Button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="DiscriptionWarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Editbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="RemoveButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="UpdateDeletePanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_ClassDescribe" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ClearFileds" returnType="void" visibility="private"/>
+        <Method name="UpdateValidation" returnType="Boolean" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="ClassesBox1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="Close_ButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="AvailabilityBoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="RemoveButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="EditbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ClassesBox1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ClassTrainer" package="GYM" visibility="public" xPosition="2.0" yPosition="488.0">
+      <Fields>
+        <Field name="IDOfTrainer" type="String" visibility="package"/>
+        <Field name="Classselectedvalue" type="String" visibility="package"/>
+        <Field name="classInfo" type="String" visibility="package"/>
+        <Field name="data" type="String[]" visibility="package"/>
+        <Field name="AssignButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="AssignTrainers" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="ClassDescription" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="ClassesBox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ClassesHeader1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Close_Button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="TrainersList" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="UpdateDeletePanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Viewbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane3" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane4" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lbl_ClassDescribe" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ViewClass" returnType="void" visibility="private"/>
+        <Method name="Availability" returnType="boolean" visibility="private">
+          <Argument type="Class" name="cl"/>
+          <Argument type="Trainer" name="t1"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="AssignButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ViewbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ClassesBoxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="Close_ButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GymMangement" package="GYM" visibility="public" xPosition="2307.0" yPosition="426.0">
+      <Fields>
+        <Field name="size" type="int" visibility="package" isStatic="true"/>
+        <Field name="trainers" type="ArrayList&lt;Trainer&gt;" visibility="package" isStatic="true"/>
+        <Field name="members" type="ArrayList&lt;Member&gt;" visibility="package" isStatic="true"/>
+        <Field name="memberships" type="ArrayList&lt;Membership&gt;" visibility="package" isStatic="true"/>
+        <Field name="classes" type="ArrayList&lt;Class&gt;" visibility="package" isStatic="true"/>
+        <Field name="Defaultclass" type="Class" visibility="package" isStatic="true"/>
+        <Field name="classnames" type="ArrayList&lt;String&gt;" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="home" package="GYM" visibility="public" xPosition="4535.0" yPosition="1164.0">
+      <Fields>
+        <Field name="Classes" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="Newmember" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="Updatebutton" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="exit" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="logout" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="memberships" type="javax.swing.JMenu" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="exitMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ClassesMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="logoutMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="membershipsMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="UpdatebuttonMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="NewmemberMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="login" package="GYM" visibility="public" xPosition="3098.0" yPosition="1183.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jCheckBox1" type="javax.swing.JCheckBox" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPasswordField1" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField1FocusGained" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField1FocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jPasswordField1FocusGained" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jPasswordField1FocusLost" returnType="void" visibility="private">
+          <Argument type="java.awt.event.FocusEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jCheckBox1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Member" package="GYM" visibility="public" xPosition="3731.0" yPosition="16.0">
+      <Fields>
+        <Field name="numberofmembers" type="int" visibility="package" isStatic="true"/>
+        <Field name="code" type="int" visibility="package"/>
+        <Field name="membership" type="Membership" visibility="package"/>
+        <Field name="Memclasses" type="Class" visibility="package"/>
+        <Field name="TrainerName" type="String" visibility="package"/>
+        <Field name="TrainerID" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="membershipname"/>
+          <Argument type="String" name="Name"/>
+          <Argument type="int" name="Age"/>
+          <Argument type="String" name="Ssn"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="String" name="Gender"/>
+          <Argument type="String" name="TName"/>
+          <Argument type="int" name="TID"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Add" returnType="void" visibility="protected">
+          <Argument type="JTextField" name="NameText"/>
+          <Argument type="JTextField" name="Agetext"/>
+          <Argument type="JTextField" name="Ssn"/>
+          <Argument type="JTextField" name="Mobilenumber"/>
+          <Argument type="JComboBox" name="Membership"/>
+          <Argument type="JComboBox" name="Gender"/>
+          <Argument type="StringBuilder" name="name"/>
+          <Argument type="StringBuilder" name="phonenumber"/>
+          <Argument type="StringBuilder" name="age"/>
+          <Argument type="StringBuilder" name="ssn"/>
+          <Argument type="StringBuilder" name="Packageselectedvalue"/>
+          <Argument type="StringBuilder" name="Genderselectedvalue"/>
+        </Method>
+        <Method name="Dislayinfo" returnType="void" visibility="protected">
+          <Argument type="JTextField" name="NameText"/>
+          <Argument type="JTextField" name="Agetext"/>
+          <Argument type="JTextField" name="Mobilenumber"/>
+          <Argument type="JComboBox" name="Membership"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="membershipname"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Membership" package="GYM" visibility="public" xPosition="3050.0" yPosition="488.0">
+      <Fields>
+        <Field name="Membershipname" type="String" visibility="package"/>
+        <Field name="Membershipmembersnumber" type="int" visibility="package"/>
+        <Field name="membershipMembers" type="Member[]" visibility="package"/>
+        <Field name="price" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Membershipname"/>
+          <Argument type="int" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="NewMember" package="GYM" visibility="public" xPosition="5436.0" yPosition="1044.0">
+      <Fields>
+        <Field name="Packageselectedvalue" type="StringBuilder" visibility="package"/>
+        <Field name="Genderselectedvalue" type="StringBuilder" visibility="package"/>
+        <Field name="codestring" type="String" visibility="package"/>
+        <Field name="name" type="StringBuilder" visibility="package"/>
+        <Field name="phonenumber" type="StringBuilder" visibility="package"/>
+        <Field name="agestring" type="StringBuilder" visibility="package"/>
+        <Field name="ssnstring" type="StringBuilder" visibility="package"/>
+        <Field name="Agetext" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Agewarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Entername" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Exitbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Genderbox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="IDlabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Membershipbox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="Mobilewarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Namewarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Paymentlabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Resetbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="SSNText" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Savebutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Ssnwarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="phonenumbertext" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="SavebuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ExitbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="MembershipboxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="GenderboxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ResetbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="EnternameKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="phonenumbertextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="AgetextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="SSNTextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="MemberformValidation" returnType="Boolean" visibility="private">
+          <Argument type="StringBuilder" name="name"/>
+          <Argument type="StringBuilder" name="phonenumber"/>
+          <Argument type="StringBuilder" name="age"/>
+          <Argument type="StringBuilder" name="ssn"/>
+        </Method>
+        <Method name="ClearFileds" returnType="void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NewTrainer" package="GYM" visibility="public" xPosition="2.0" yPosition="1104.0">
+      <Fields>
+        <Field name="codestring" type="String" visibility="package"/>
+        <Field name="Genderselectedvalue" type="StringBuilder" visibility="package"/>
+        <Field name="Shiftselectedvalue" type="StringBuilder" visibility="package"/>
+        <Field name="name" type="StringBuilder" visibility="package"/>
+        <Field name="phonenumber" type="StringBuilder" visibility="package"/>
+        <Field name="agestring" type="StringBuilder" visibility="package"/>
+        <Field name="ssnstring" type="StringBuilder" visibility="package"/>
+        <Field name="AgeText" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Agewarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Entername" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Exitbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Genderbox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="IDLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Mobilewarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Namewarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Resetbutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="SSNText" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="SSNwarning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Savebutton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="ShiftTime" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="phonenumbertext" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ClearFileds" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="GenderboxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="SavebuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ShiftTimeActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ResetbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ExitbuttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="EnternameKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="EnternameActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="phonenumbertextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="AgeTextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="SSNTextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="TrainerValidation" returnType="Boolean" visibility="private">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="ssn"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="String" name="age"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Person" package="GYM" visibility="public" isAbstract="true" xPosition="1734.0" yPosition="17.0">
+      <Fields>
+        <Field name="Name" type="String" visibility="public"/>
+        <Field name="Age" type="int" visibility="package"/>
+        <Field name="Ssn" type="String" visibility="package"/>
+        <Field name="phonenumber" type="String" visibility="package"/>
+        <Field name="Gender" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Ssn"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="int" name="Age"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Ssn"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="int" name="Age"/>
+          <Argument type="String" name="Gender"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Add" returnType="void" visibility="protected" isAbstract="true">
+          <Argument type="JTextField" name="NameText"/>
+          <Argument type="JTextField" name="Agetext"/>
+          <Argument type="JTextField" name="Ssn"/>
+          <Argument type="JTextField" name="Mobilenumber"/>
+          <Argument type="JComboBox" name="Membership"/>
+          <Argument type="JComboBox" name="Gender"/>
+          <Argument type="StringBuilder" name="name"/>
+          <Argument type="StringBuilder" name="phonenumber"/>
+          <Argument type="StringBuilder" name="age"/>
+          <Argument type="StringBuilder" name="ssn"/>
+          <Argument type="StringBuilder" name="Packageselectedvalue"/>
+          <Argument type="StringBuilder" name="Genderselectedvalue"/>
+        </Method>
+        <Method name="Dislayinfo" returnType="void" visibility="protected" isAbstract="true">
+          <Argument type="JTextField" name="NameText"/>
+          <Argument type="JTextField" name="Agetext"/>
+          <Argument type="JTextField" name="Mobilenumber"/>
+          <Argument type="JComboBox" name="Membership"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="Packageselectedvalue"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Trainer" package="GYM" visibility="public" xPosition="2.0" yPosition="25.0">
+      <Fields>
+        <Field name="tranierID" type="int" visibility="package"/>
+        <Field name="avaiability" type="boolean" visibility="package"/>
+        <Field name="NumberOfTrainers" type="int" visibility="package" isStatic="true"/>
+        <Field name="ShiftTime" type="String" visibility="package"/>
+        <Field name="DayTime" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Ssn"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="int" name="Age"/>
+          <Argument type="String" name="Gender"/>
+          <Argument type="String" name="ShiftTime"/>
+          <Argument type="String" name="DayTime"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Add" returnType="void" visibility="protected">
+          <Argument type="JTextField" name="NameText"/>
+          <Argument type="JTextField" name="Agetext"/>
+          <Argument type="JTextField" name="Ssn"/>
+          <Argument type="JTextField" name="Mobilenumber"/>
+          <Argument type="JComboBox" name="Membership"/>
+          <Argument type="JComboBox" name="Gender"/>
+          <Argument type="StringBuilder" name="name"/>
+          <Argument type="StringBuilder" name="phonenumber"/>
+          <Argument type="StringBuilder" name="age"/>
+          <Argument type="StringBuilder" name="ssn"/>
+          <Argument type="StringBuilder" name="Packageselectedvalue"/>
+          <Argument type="StringBuilder" name="Genderselectedvalue"/>
+        </Method>
+        <Method name="Dislayinfo" returnType="void" visibility="protected">
+          <Argument type="JTextField" name="NameText"/>
+          <Argument type="JTextField" name="Agetext"/>
+          <Argument type="JTextField" name="Mobilenumber"/>
+          <Argument type="JComboBox" name="Membership"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="shift"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TrainersHome" package="GYM" visibility="public" xPosition="1462.0" yPosition="824.0">
+      <Fields>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu4" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu5" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu6" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu8" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jMenu4MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jMenu5MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jMenu1MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jMenu2MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jMenu3MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jMenu6MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="jMenu8MouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Update" package="GYM" visibility="public" xPosition="5445.0" yPosition="16.0">
+      <Fields>
+        <Field name="IDSearch" type="int" visibility="package"/>
+        <Field name="Packageselectedvalue" type="String" visibility="package"/>
+        <Field name="removedmember" type="Member" visibility="package"/>
+        <Field name="price" type="String" visibility="package"/>
+        <Field name="Agetext" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Close_Button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Entername" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="IDLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="IDText" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Membershipbox" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="Paymentlabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="RemoveButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="SearchIDButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="UpdateDeletePanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Update_Delete_Header" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_ID" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_age" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_name" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_phone" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="phonenumbertext" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="updateButton" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="SearchIDButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="lbl_ageKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="lbl_ageKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="lbl_phoneKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="lbl_phoneKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="lbl_IDKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="lbl_IDKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="IDTextKeyReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="IDTextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="IDTextActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="MembershipboxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="Close_ButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="RemoveButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="updateButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="AgetextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="phonenumbertextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="EnternameKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="UpdateValidation" returnType="Boolean" visibility="private"/>
+        <Method name="ClearFields" returnType="void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UpdateDelete" package="GYM" visibility="public" xPosition="740.0" yPosition="496.0">
+      <Fields>
+        <Field name="IDOfTrainer" type="int" visibility="package"/>
+        <Field name="Genderselectedvalue" type="String" visibility="package"/>
+        <Field name="Shiftselectedvalue" type="String" visibility="package"/>
+        <Field name="removedtrainer" type="Trainer" visibility="package"/>
+        <Field name="AgeLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Agetext" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Close_Button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="EnterTrainerID" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="Entername" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="NameLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="PhoneLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="RemoveButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="SearchButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="ShiftLabel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ShiftTime" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="UpdateButton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="lbl_age" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_name" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lbl_phone" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="phonenumbertext" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="ClearFileds" returnType="void" visibility="private"/>
+        <Method name="UpdateValidation" returnType="Boolean" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="RemoveButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="UpdateButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ShiftTimeActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="SearchButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="EnternameKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="phonenumbertextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="AgetextKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="Close_ButtonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="EnternameActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="TrainerValidation" returnType="Boolean" visibility="private">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="phonenumber"/>
+          <Argument type="String" name="age"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="GYM.Trainer" target="GYM.Person"/>
+    <HasRelation name="removedMember" source="GYM.ClassFrame" target="GYM.Member" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="members" source="GYM.GymMangement" target="GYM.Member" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Member&gt;"/>
+    <HasRelation name="classes" source="GYM.GymMangement" target="GYM.Class" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Class&gt;"/>
+    <HasRelation name="Classmembers" source="GYM.Class" target="GYM.Member" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Member&gt;"/>
+    <HasRelation name="memberships" source="GYM.GymMangement" target="GYM.Membership" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Membership&gt;"/>
+    <HasRelation name="removedmember" source="GYM.Update" target="GYM.Member" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="GYM.ClassTrainer" target="GYM.Trainer" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="removedclass" source="GYM.ClassOperaions" target="GYM.Class" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Memclasses" source="GYM.Member" target="GYM.Class" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="membership" source="GYM.Member" target="GYM.Membership" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Defaultclass" source="GYM.GymMangement" target="GYM.Class" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="GYM.Member" target="GYM.Person"/>
+    <HasRelation name="removedtrainer" source="GYM.UpdateDelete" target="GYM.Trainer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="t1" source="GYM.Class" target="GYM.Trainer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="trainers" source="GYM.GymMangement" target="GYM.Trainer" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Trainer&gt;"/>
+    <UseRelation source="GYM.ClassFrame" target="GYM.Member" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
