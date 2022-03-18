@@ -1,6 +1,3 @@
 # Gym Management System
+This project was developed using object oriented programming.
 
-I developed this object orinted programmin project
-
-## Languages
-- Java
